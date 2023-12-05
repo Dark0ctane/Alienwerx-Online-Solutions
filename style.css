@@ -289,6 +289,25 @@
   text-align: end;
 }
 
+.pricing__item {
+  background-color: #151E3F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 60px 40px 32px 40px;
+  position: relative;
+}
+.pricing__item__features {
+  display: flex;
+  flex-direction: column;
+}
+.pricing__item__img {
+  position: absolute;
+  top: 0px;
+  transform: translateY(-50%);
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: whitesmoke;
