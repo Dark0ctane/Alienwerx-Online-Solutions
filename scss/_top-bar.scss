@@ -1,11 +1,2 @@
 @use './styles' as s;
 
-.top-bar{
-  display: none;
-  background-color: s.$primary;
-  color: white;
-
-  @media screen and (min-width:750px) {
-    display: flex;
-  }
-}

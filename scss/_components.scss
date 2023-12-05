@@ -1,12 +1,49 @@
 @use './styles' as s;
 
-.btn{
-  padding: 8px 24px;
+.button{
 
   &--primary{
+    width: fit-content;
     background-color: s.$primary;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    color: s.$dark-blue;
+    @include s.body($weight:600,$font-size:16px);
+    display:flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+    align-items: center;
+  }
+
+  &--secondary{
+    width: fit-content;
+    border: solid 1px;
+    border-color: s.$primary;
+    padding: 8px 32px;
+    @include s.body($weight:600,$font-size:16px);
   }
 }
+
+.wrapper{
+  margin-inline: 350px;
+}
+
+.body-section{
+  padding-block: 65px;
+}
+
+.section-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header{
+  @include s.body($weight:700,$font-size:83px);
+  color: s.$primary;
+}
+
+.section-sub-header{
+  @include s.body($weight:400,$font-size:24px);
+  font-style: italic;
+  text-align: center;
+}
+

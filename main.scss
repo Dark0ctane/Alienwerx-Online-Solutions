@@ -4,9 +4,13 @@
 @use './scss/top-bar';
 @use './scss/hero';
 @use './scss/nav';
+@use './scss/how-it-works';
+@use './scss/features';
 
 body{
   font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+  background-color: styles.$dark-blue;
 }
 
 button:hover{

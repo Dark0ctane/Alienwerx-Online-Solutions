@@ -1,0 +1,22 @@
+@use './styles' as s;
+
+.how-it-works{
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.how-it-works__steps{
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-it-works__steps__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  max-width: 400px;
+}

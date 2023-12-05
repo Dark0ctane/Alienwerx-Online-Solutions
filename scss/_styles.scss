@@ -1,107 +1,54 @@
 // Colors
-$primary: #CC3363;
-$primary-neutral: #4A4345;
+$primary: #40FF02;
+$bright-blue: #1C75BC;
+$dark-blue: #010011;
+$medium-blue: #151E3F;
+$heading-font: "gabriella", sans-serif;
+$body-font: "forma-djr-display", sans-serif;
+
+// font-family: forma-djr-display, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+@mixin headingXL($font-size) {
+  font-family: $heading-font;
+  font-weight: 900;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: 110%;
+}
+
+@mixin body($weight, $font-size){
+  font-family: $body-font;
+  font-weight: $weight;
+  font-size: $font-size;
+  line-height: 150%;
+}
 
 // Fonts
-.hero-container__heading
+.heading__xl
 {
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 75px;
+  font-family: $body-font;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 110%;
 }
 
-.nav__company-name{
+.heading__l{
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.heading__m{
   font-size: 24px;
   font-weight: bold;
+  line-height: 110%;
 }
 
-.body-md{
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.btn,
-.item__header-text
-{
-  font-size: 16px;
-  line-height: 24px;
+.heading__s{
+  font-size: 20px;
   font-weight: bold;
-}
-
-.top-bar__text
-{
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.section-heading{
-
-  &__text{
-    font-size: 14px;
-    font-weight: lighter;
-    letter-spacing: 9%;
-    padding-bottom: 8px;
-  }
-
-  &__header{
-    font-size: 38px;
-    line-height: 56px;
-    padding-bottom: 72px;
-    font-weight: bold;
-
-    span{
-      color: $primary;
-      font-style: italic;
-    }
-  }
-
-}
-
-.item{
-  padding-bottom: 32px;
-
-  &__body-text{
-    padding-top: 8px;
-    font-size: 14px;
-    line-height: 24px;
-    color: $primary-neutral;
-  }
-
-}
-
-// Spacing
-.top-bar{
-  padding: 4px 45px;
-
-  @media screen and (min-width: 500px) {
-    padding: 4px 144px;
-  }
-
-  &__item-group{
-    padding-right: 48px;
-  }
-
-  &__img{
-    padding-right: 8px;
-  }
-}
-
-.hero-container{
-  &__heading{
-    padding-bottom: 32px;
-  }
-
-  &__text{
-    padding-bottom: 16px;
-  }
-}
-
-.nav{
-  padding-top: 32px;
-  padding-inline: 45px;
-}
-
-.container{
-  padding-inline: 45px;
-  margin-block: 88px;
+  line-height: 110%;
 }

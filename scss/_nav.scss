@@ -1,4 +1,65 @@
+@use './styles' as s;
 .nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-block: 40px;
+  position: relative;
+
+  &__img{
+    position: absolute;
+    top: -89px;
+  }
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__first-line-wrapper{
+    display: flex;
+    @include s.headingXL($font-size:24px);
+    color: s.$primary;
+  }
+
+  &__first-line{
+    position: relative;
+    top: 7px;
+  }
+
+  &__second-line{
+    position: relative;
+    left: 37px;
+    bottom: 12px;
+    @include s.body($weight:400, $font-size:18px);
+    font-style: italic;
+  }
+}
+
+.nav-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+
+  &__item{
+    @include s.body($weight:500,$font-size:16px)
+  }
+
+  &__button{
+    position: relative;
+
+    &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      &__img{
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
 }
