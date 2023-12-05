@@ -1,0 +1,107 @@
+// Colors
+$primary: #CC3363;
+$primary-neutral: #4A4345;
+
+// Fonts
+.hero-container__heading
+{
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+.nav__company-name{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.body-md{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn,
+.item__header-text
+{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.top-bar__text
+{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.section-heading{
+
+  &__text{
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 9%;
+    padding-bottom: 8px;
+  }
+
+  &__header{
+    font-size: 38px;
+    line-height: 56px;
+    padding-bottom: 72px;
+    font-weight: bold;
+
+    span{
+      color: $primary;
+      font-style: italic;
+    }
+  }
+
+}
+
+.item{
+  padding-bottom: 32px;
+
+  &__body-text{
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $primary-neutral;
+  }
+
+}
+
+// Spacing
+.top-bar{
+  padding: 4px 45px;
+
+  @media screen and (min-width: 500px) {
+    padding: 4px 144px;
+  }
+
+  &__item-group{
+    padding-right: 48px;
+  }
+
+  &__img{
+    padding-right: 8px;
+  }
+}
+
+.hero-container{
+  &__heading{
+    padding-bottom: 32px;
+  }
+
+  &__text{
+    padding-bottom: 16px;
+  }
+}
+
+.nav{
+  padding-top: 32px;
+  padding-inline: 45px;
+}
+
+.container{
+  padding-inline: 45px;
+  margin-block: 88px;
+}

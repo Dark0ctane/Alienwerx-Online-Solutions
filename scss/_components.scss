@@ -1,0 +1,12 @@
+@use './styles' as s;
+
+.btn{
+  padding: 8px 24px;
+
+  &--primary{
+    background-color: s.$primary;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+}
